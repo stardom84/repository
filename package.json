@@ -1,0 +1,30 @@
+{
+  "name": "repository",
+  "description": "",
+  "version": "0.0.1",
+  "author": "",
+  "license": "UNLICENSED",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "start": "webpack --config webpack.config.js --progress --profile --watch --content-base src/",
+    "test": "gulp",
+    "prepublish": ""
+  },
+  "publishConfig": {
+    "registry": ""
+  },
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "devDependencies": {
+    "@types/webpack": "^1.12.34",
+    "gulp": "^3.9.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "firebase": "^3.4.0"
+  }
+}
